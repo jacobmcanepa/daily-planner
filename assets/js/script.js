@@ -1,5 +1,7 @@
-var hello = "sup bitches";
-console.log(hello);
-
 var DateTime = luxon.DateTime;
-console.log(DateTime.now().toString());
+var dt = DateTime.now();
+var currentWeekday = dt.toLocaleString({weekday: 'long'});
+var currentMonth = dt.toLocaleString({month: 'long'});
+var currentDay = dt.toLocaleString({day: 'numeric'});
+
+$("#currentDay").append(currentWeekday + ", " + currentMonth + " " + currentDay);
