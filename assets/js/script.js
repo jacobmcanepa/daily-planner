@@ -5,3 +5,9 @@ var currentMonth = dt.toLocaleString({month: 'long'});
 var currentDay = dt.toLocaleString({day: 'numeric'});
 
 $("#currentDay").append(currentWeekday + ", " + currentMonth + " " + currentDay);
+
+setInterval(function() {
+  $("#currentDay").empty();
+  $("#currentDay").append(currentWeekday + ", " + currentMonth + " " + currentDay);
+  console.log("updated date");
+}, 60000);
