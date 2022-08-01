@@ -27,118 +27,145 @@ var timeBlockColor = function() {
 
   // check if it's 9AM
   if (nine === currentHour) {
+    $("#textarea-9").removeClass("future-bg past-bg");
     $("#textarea-9").addClass("current-bg");
   }
 
   else if (nine > currentHour) {
+    $("#textarea-9").removeClass("current-bg past-bg");
     $("#textarea-9").addClass("future-bg");
   }
 
   else {
+    $("#textarea-9").removeClass("current-bg future-bg");
     $("#textarea-9").addClass("past-bg");
   }
 
   // check if it's 10AM
   if (ten === currentHour) {
+    $("#textarea-10").removeClass("future-bg past-bg");
     $("#textarea-10").addClass("current-bg");
   }
   
   else if (ten > currentHour) {
+    $("#textarea-10").removeClass("current-bg past-bg");
     $("#textarea-10").addClass("future-bg");
   }
   
   else {
+    $("#textarea-10").removeClass("current-bg future-bg");
     $("#textarea-10").addClass("past-bg");
   }
 
   // check if it's 11AM
   if (eleven === currentHour) {
+    $("#textarea-11").removeClass("future-bg past-bg");
     $("#textarea-11").addClass("current-bg");
   }
 
   else if (eleven > currentHour) {
+    $("#textarea-11").removeClass("current-bg past-bg");
     $("#textarea-11").addClass("future-bg");
   }
 
   else {
+    $("#textarea-11").removeClass("current-bg future-bg");
     $("#textarea-11").addClass("past-bg")
   }
 
   // check if it's 12PM
   if (twelve === currentHour) {
+    $("#textarea-12").removeClass("future-bg past-bg");
     $("#textarea-12").addClass("current-bg");
   }
 
   else if (twelve > currentHour) {
+    $("#textarea-12").removeClass("current-bg past-bg");
     $("#textarea-12").addClass("future-bg");
   }
 
-    else {
+  else {
+    $("#textarea-12").removeClass("current-bg future-bg");
     $("#textarea-12").addClass("past-bg")
   }
 
   // check if it's 1PM
   if ((one + 12) === currentHour) {
+    $("#textarea-13").removeClass("future-bg past-bg");
     $("#textarea-13").addClass("current-bg");
   }
 
   else if ((one + 12) > currentHour) {
+    $("#textarea-13").removeClass("current-bg past-bg");
     $("#textarea-13").addClass("future-bg");
   }
 
   else {
+    $("#textarea-13").removeClass("current-bg future-bg");
     $("#textarea-13").addClass("past-bg")
   }
 
   // check if it's 2PM
   if ((two + 12) === currentHour) {
+    $("#textarea-14").removeClass("future-bg past-bg");
     $("#textarea-14").addClass("current-bg");
   }
 
   else if ((two + 12) > currentHour) {
+    $("#textarea-14").removeClass("current-bg past-bg");
     $("#textarea-14").addClass("future-bg");
   }
 
   else {
+    $("#textarea-14").removeClass("current-bg future-bg");
     $("#textarea-14").addClass("past-bg")
   }
 
   // check if it's 3PM
   if ((three + 12) === currentHour) {
+    $("#textarea-15").removeClass("future-bg past-bg");
     $("#textarea-15").addClass("current-bg");
   }
 
   else if ((three + 12) > currentHour) {
+    $("#textarea-15").removeClass("current-bg past-bg");
     $("#textarea-15").addClass("future-bg");
   }
 
   else {
+    $("#textarea-15").removeClass("current-bg future-bg");
     $("#textarea-15").addClass("past-bg")
   }
 
   // check if it's 4PM
   if ((four + 12) === currentHour) {
+    $("#textarea-16").removeClass("future-bg past-bg");
     $("#textarea-16").addClass("current-bg");
   }
 
   else if ((four + 12) > currentHour) {
+    $("#textarea-16").removeClass("current-bg past-bg");
     $("#textarea-16").addClass("future-bg");
   }
 
   else {
+    $("#textarea-16").removeClass("current-bg future-bg");
     $("#textarea-16").addClass("past-bg")
   }
 
   // check if it's 5PM
   if ((five + 12) === currentHour) {
+    $("#textarea-17").removeClass("future-bg past-bg");
     $("#textarea-17").addClass("current-bg");
   }
 
   else if ((five + 12) > currentHour) {
+    $("#textarea-17").removeClass("current-bg past-bg");
     $("#textarea-17").addClass("future-bg");
   }
 
   else {
+    $("#textarea-17").removeClass("current-bg future-bg");
     $("#textarea-17").addClass("past-bg")
   }
 };
