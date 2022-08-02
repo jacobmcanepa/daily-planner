@@ -4,6 +4,45 @@ var currentWeekday = dt.toLocaleString({weekday: 'long'});
 var currentMonth = dt.toLocaleString({month: 'long'});
 var currentDay = dt.toLocaleString({day: 'numeric'});
 var currentHour = parseInt(dt.toLocaleString(DateTime.TIME_24_SIMPLE));
+var events = JSON.parse(localStorage.getItem("events")) || [];
+
+var loadEvents = function() {
+  for (var i = 0; i < events.length; i++) {
+    if (events[i].id === 9) {
+      $("#textarea-9").val(events[i].value);
+    }
+
+    else if (events[i].id === 10) {
+      $("#textarea-10").val(events[i].value);
+    }
+  }
+};
+
+loadEvents();
+
+$("#btn-9").on("click", function() {
+  var value = $("#textarea-9").val();
+
+  var anEvent = {
+    id: 9,
+    value: value
+  };
+
+  events.push(anEvent);
+  localStorage.setItem("events", JSON.stringify(events));
+});
+
+$("#btn-10").on("click", function() {
+  var value = $("#textarea-10").val();
+
+  var anEvent = {
+    id: 10,
+    value: value
+  };
+
+  events.push(anEvent);
+  localStorage.setItem("events", JSON.stringify(events));
+});
 
 
 $("#currentDay").append(currentWeekday + ", " + currentMonth + " " + currentDay);
@@ -176,3 +215,8 @@ setInterval(function() {
   timeBlockColor();
   console.log("time block updated");
 }, 60000);
+
+
+
+
+
