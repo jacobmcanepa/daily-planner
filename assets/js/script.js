@@ -15,12 +15,46 @@ var loadEvents = function() {
     else if (events[i].id === 10) {
       $("#textarea-10").val(events[i].value);
     }
+
+    else if (events[i].id === 11) {
+      $("#textarea-11").val(events[i].value);
+    }
+
+    else if (events[i].id === 12) {
+      $("#textarea-12").val(events[i].value);
+    }
+
+    else if (events[i].id === 13) {
+      $("#textarea-13").val(events[i].value);
+    }
+
+    else if (events[i].id === 14) {
+      $("#textarea-14").val(events[i].value);
+    }
+
+    else if (events[i].id === 15) {
+      $("#textarea-15").val(events[i].value);
+    }
+
+    else if (events[i].id === 16) {
+      $("#textarea-16").val(events[i].value);
+    }
+
+    else if (events[i].id === 17) {
+      $("#textarea-17").val(events[i].value);
+    }
   }
 };
 
 loadEvents();
 
 $("#btn-9").on("click", function() {
+  for (var i = 0; i < events.length; i++) {
+    if (events[i].id === 9) {
+      events.splice(i, 1);
+    }
+  }
+
   var value = $("#textarea-9").val();
 
   var anEvent = {
@@ -33,10 +67,142 @@ $("#btn-9").on("click", function() {
 });
 
 $("#btn-10").on("click", function() {
+  for (var i = 0; i < events.length; i++) {
+    if (events[i].id === 10) {
+      events.splice(i, 1);
+    }
+  }
+
   var value = $("#textarea-10").val();
 
   var anEvent = {
     id: 10,
+    value: value
+  };
+
+  events.push(anEvent);
+  localStorage.setItem("events", JSON.stringify(events));
+});
+
+$("#btn-11").on("click", function() {
+  for (var i = 0; i < events.length; i++) {
+    if (events[i].id === 11) {
+      events.splice(i, 1);
+    }
+  }
+
+  var value = $("#textarea-11").val();
+
+  var anEvent = {
+    id: 11,
+    value: value
+  };
+
+  events.push(anEvent);
+  localStorage.setItem("events", JSON.stringify(events));
+});
+
+$("#btn-12").on("click", function() {
+  for (var i = 0; i < events.length; i++) {
+    if (events[i].id === 12) {
+      events.splice(i, 1);
+    }
+  }
+
+  var value = $("#textarea-12").val();
+
+  var anEvent = {
+    id: 12,
+    value: value
+  };
+
+  events.push(anEvent);
+  localStorage.setItem("events", JSON.stringify(events));
+});
+
+$("#btn-13").on("click", function() {
+  for (var i = 0; i < events.length; i++) {
+    if (events[i].id === 13) {
+      events.splice(i, 1);
+    }
+  }
+
+  var value = $("#textarea-13").val();
+
+  var anEvent = {
+    id: 13,
+    value: value
+  };
+
+  events.push(anEvent);
+  localStorage.setItem("events", JSON.stringify(events));
+});
+
+$("#btn-14").on("click", function() {
+  for (var i = 0; i < events.length; i++) {
+    if (events[i].id === 14) {
+      events.splice(i, 1);
+    }
+  }
+
+  var value = $("#textarea-14").val();
+
+  var anEvent = {
+    id: 14,
+    value: value
+  };
+
+  events.push(anEvent);
+  localStorage.setItem("events", JSON.stringify(events));
+});
+
+$("#btn-15").on("click", function() {
+  for (var i = 0; i < events.length; i++) {
+    if (events[i].id === 15) {
+      events.splice(i, 1);
+    }
+  }
+
+  var value = $("#textarea-15").val();
+
+  var anEvent = {
+    id: 15,
+    value: value
+  };
+
+  events.push(anEvent);
+  localStorage.setItem("events", JSON.stringify(events));
+});
+
+$("#btn-16").on("click", function() {
+  for (var i = 0; i < events.length; i++) {
+    if (events[i].id === 16) {
+      events.splice(i, 1);
+    }
+  }
+
+  var value = $("#textarea-16").val();
+
+  var anEvent = {
+    id: 16,
+    value: value
+  };
+
+  events.push(anEvent);
+  localStorage.setItem("events", JSON.stringify(events));
+});
+
+$("#btn-17").on("click", function() {
+  for (var i = 0; i < events.length; i++) {
+    if (events[i].id === 17) {
+      events.splice(i, 1);
+    }
+  }
+
+  var value = $("#textarea-17").val();
+
+  var anEvent = {
+    id: 17,
     value: value
   };
 
