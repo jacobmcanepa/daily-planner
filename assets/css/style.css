@@ -30,6 +30,8 @@ textarea{
 .time {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .five {
@@ -37,11 +39,23 @@ textarea{
 }
 
 .saveBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  transition: background-color 0.15s;
+}
+
+.saveBtn:hover {
+  background-color: rgba(6, 174, 213, 0.75);
+}
+
+.saveBtn:active {
+  background-color: rgba(6, 174, 213, 0.1);
 }
 
 .current-bg {
@@ -55,4 +69,5 @@ textarea{
 .past-bg {
   background-color: rgb(186, 191, 188);
 }
+
 
