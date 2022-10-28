@@ -1,10 +1,26 @@
 # Jacob Canepa's Daily Planner
 
-A simple scheduler application with futures such as:
-COLOR CODED EVENT BLOCKS BASED ON CURRENT TIME;
-CURRENT DAY DISPLAYED AT TOP;
-EVENTS STAY ON PAGE EVEN AFTER A REFRESH
+## Description
+A simple scheduler application that allows a user to keep track of events happening throughout their day.
 
-https://jacobmcanepa.github.io/daily-planner/
+## Table of Contents
+- [Features](#features)
+- [Usage](#usage)
+- [Questions](#questions)
+
+## Features
+- Color coded event blocks based on current time
+- Current day displayed at the top
+- Events stay on page even after a refresh or closing of the tab
+
+## Usage
+Click on a text block to start filling out your schedule. Once finished, hit the save icon on the right hand side in order to store the task.
+
+Deployed link: https://jacobmcanepa.github.io/daily-planner/
 
 ![image not working](./assets/images/readme-screenshot.png)
+
+## Questions
+Github: https://github.com/jacobmcanpea
+
+Email: jacobmcanepa@gmail.com
